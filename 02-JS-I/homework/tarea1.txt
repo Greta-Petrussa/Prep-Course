@@ -1,0 +1,57 @@
+1. En un archivo de texto separado que debes crear, escribe explicaciones de los siguientes conceptos como si se lo estuvieras explicando a un niño de 12 años. Hacer esto te ayudará a descubrir rápidamente cualquier agujero en tu comprensión.
+
+ * Variables
+ * Strings
+ * Funciones (argumentos, `return`)
+ * Declaraciones `if`
+ * Valores booleanos (`true`, `false`)
+
+Variables 
+Una variable es un nombre que contiene un valor o expresión.  Cada vez que use ese nombre en su código, la computadora usará el valor representado por ese nombre. Para entender mejor, veámoslo con un ejemplo:
+En un zoológico hay distintos animales, y entre todos los animales que existen podemos encontrar a la jirafa, al elefante, al león, y cualquier otro animal que se nos ocurra.
+Por esta razón, podemos crear una variable que se llame “animal” y  a ésta le asignamos un valor, es decir, un animal cualquiera, como por ejemplo el león. En código se vería de la siguiente forma: 
+Var animal = león
+Var es la palabra clave que se usa para referirse a las variables. ‘animal’ es el nombre de la variable, y ‘león’ es el valor de la variable.  
+En programación se utilizan las variables porque es una forma mas sencilla de escribir. Si ahora en el código nos queremos referir al león, simplemente podemos escribir la palabra animal y el programa por si solo va a entender y nos dará de resultado ‘león’.
+A su vez, las variables también pueden cambiar de valor, ya que dentro del grupo de los animales existen otros como los que nombramos anteriormente, el elefante o la jirafa. Por esta razón, es que si definimos primero la variable llamada animal y le asignamos de valor ‘león’, y luego escribimos la misma variable (es decir var animal) pero  le asignamos otro valor ya sea ‘elefante’, al momento de escribir animal, el programa dará el ultimo valor que escribimos, en este caso ‘elefante’. 
+Para que esto no ocurra y que las variables siempre conserven su valor, podemos escribirlas como constante, es decir, en vez de usar la plabra clave var, usamos const. Hagamos un ejemplo: 
+Seguimos con los animales del zoológico. Tenemos la variable animal, asignada con el valor león (var animal=leon) y queremos crear otra variable animal pero que no cambie de valor. Para esto, debemos escribir la variable con la palabra const seguida de su nombre, en este caso animal, y el valor asignado, es decir, elefante. En código se vería así: const animal = elefante. 
+De esta forma, tenemos 2 variables que se llaman iguales, pero con valores distintos. Uno de ellos puede cambiar y el otro no. 
+
+Strings 
+Los strings nos permiten escribir texto en el código y que el programa entienda. Veámoslo con un ejemplo:
+Tenemos una variable que es elefante, y queremos que el elefante se llame Rufy. Para darle el nombre, lo que debemos hacer es escribir el nombre Rufy entre comillas. Por lo que se vería asi: var elefante = “Rufy”
+A diferencia del caso anterior, la palabra Rufy es considerada texto y no un valor, es decir, es un string. Los strings son palabras, frases o letras que siempre van a ser consideradas como texto. No cambian y se escriben siempre entre comillas.
+
+Funciones (arumentos return )
+Las funciones son líneas de código que realizan una acción. Como queremos crear una función que haga una acción, queremos que nos retorne una respuesta. La respuesta que nos dará se conoce como ‘argumento return’. Veamos con un ejemplo: 
+Queremos hacer una función nos indique el horario en el que come cada animal del zoológico. La función la llamamos ‘horario de comida’ y lo que hará el código es por cada animal que ingresemos, nos retornará el horario en el que come. 
+
+Function HorarioDeComida (animal){
+If (animal come carne){
+return ‘come a las 18hs’;
+} else if  (animal come plantas){
+return ‘come a las 19hs’;
+} else {
+return ‘come a las 20hs’;
+}
+return ‘no tiene horario asignado’
+}
+
+
+Declaraciones if 
+La palabra if en español es “si”. El if se usa para hacer comparaciones. Veámoslo con un ejemplo: 
+En el zoológico hay muchos animales y queremos clasificarlos. Los animales que comen plantas son herbívoros, y los animales que comen carne son carnívoros. Como queremos que el programa compare por si solo todos los animales y nos diga si son herbívoros o carnívoros, utilizamos el if de la siguiente forma: 
+Function zoologico(animal) {
+If (animal come plantas) {
+return ‘Es herbivoro’;
+} else {
+return ‘Es carnivoro’;
+}
+}
+En este caso, lo que le estamos diciendo al programa es que tenemos una función que se llama zoológico, y esta función va a decirnos si los animales que ingresemos son carnívoros o herbívoros. ¿Cómo va a saberlo? Utilizando el if y comparando. Si el animal come plantas, va a retornarnos y decirnos que es un herbívoro, sino si come carne, va a retornarnos y decirnos que es carnívoro. 
+También podemos utilizar el else if, que nos permitirá tener una tercera comparación. Por ejemplo, si queremos saber cuales son los animales que comen tanto plantas como carne, utilizaremos el else if para tener una tercera comparación. 
+
+
+Valores booleanos 
+Los valores booleanos son respuestas a preguntas. Las respuestas booleanas son solo dos: true (verdadero) o false (falso); como si o no, blanco o negro, positivo o negativo.
